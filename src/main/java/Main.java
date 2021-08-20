@@ -38,9 +38,7 @@ public class Main {
         String filename3 = "new_data.json";
         String json3 = readString(filename3);
         List<Employee> list3 = jsonToList(json3);
-        for (Employee employee : list3) {
-            System.out.println(employee);
-        }
+        list3.forEach(System.out::println);
     }
 
     private static List<Employee> jsonToList(String json) {
